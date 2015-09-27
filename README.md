@@ -7,8 +7,8 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
-PSRs you support to avoid any confusion with users and contributors.
+This is a simple package to create a workbench in your (Laravel)[http://laravel.com] project.   
+PSR4 Support.
 
 ## Install
 
@@ -19,10 +19,12 @@ $ composer require mosaiqo/packet
 ```
 
 ## Usage
-
+Copy this line in to the providers array
 ``` php
-$packet = new Mosaiqo\();
-echo $packet->echoPhrase('Hello, Mosaiqo!');
+'providers' => [
+	...
+	Mosaiqo\Packet\PacketServiceProvider::class,
+	...
 ```
 
 ## Change log
