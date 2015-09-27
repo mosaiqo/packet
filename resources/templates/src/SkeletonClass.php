@@ -1,9 +1,9 @@
-<?php namespace Mosaiqo\Packet;
+<?php namespace {{vendor}}\{{package}};
 
-class Packet
+class {{package}}
 {
     /**
-     * Create a new Packet Instance
+     * Create a new {{package}} Instance
      */
     public function __construct()
     {

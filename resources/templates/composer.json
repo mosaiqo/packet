@@ -1,0 +1,42 @@
+{
+    "name": "{{vendor}}/{{package}}",
+    "description": "{{description}}",
+    "keywords": [
+        "{{vendor}}",
+        "{{package}}"
+    ],
+    "homepage": "https://{{repository}}/{{vendor}}/{{package}}",
+    "license": "{{license}}",
+    "authors": [
+        {
+            "name": "{{author_name}}",
+            "email": "{{author_email}}",
+            "homepage": "{{author_website}}",
+            "role": "{{author_role}}"
+        }
+    ],
+    "require": {
+        "php" : ">=5.5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "{{vendorUC}}\\{{packageUC}}\\": "{{src}}"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "{{vendorUC}}\\{{packageUC}}\\Test\\": "{{tests}}"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
