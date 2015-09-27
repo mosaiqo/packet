@@ -1,0 +1,9 @@
+vendor/
+node_moudules/
+bower_componentes/
+
+*.sublime-project
+*.sublime-workspace
+.idea/
+
+*.DS_Store
