@@ -1,0 +1,13 @@
+*.sublime-project
+*.sublime-workspace
+.idea/
+
+/vendor
+/node_modules
+/bower_componenets
+
+.DS_Store
+
+Homestead.yaml
+Homestead.json
+.env

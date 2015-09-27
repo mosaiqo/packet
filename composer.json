@@ -1,42 +1,34 @@
 {
-    "name": "mosaiqo/packet",
-    "description": "This is a fake description change it.",
-    "keywords": [
-        "mosaiqo",
-        "packet"
-    ],
-    "homepage": "https://github.com/mosaiqo/packet",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Boudy de Geer",
-            "email": "boudydegeer@mosaiqo.com",
-            "homepage": "http://boudydegeer.com",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "php" : ">=5.5.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit" : "4.*"
-    },
-    "autoload": {
-        "psr-4": {
-            "Mosaiqo\\Packet\\": "app"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Mosaiqo\\Packet\\Test\\": "tests"
-        }
-    },
-    "scripts": {
-        "test": "phpunit"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        }
+  "name": "mosaiqo/packet",
+  "description": "A simple package to create a workbench for your own packages.",
+  "authors": [
+    {
+      "name": "Boudy de Geer",
+      "email": "boudydegeer@mosaiqo.com"
     }
+  ],
+  "keywords": [
+    "Packager", "packet", "Laravel", "package", "skeleton", "workbench", "mosaiqo"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=5.5.0",
+    "illuminate/support": "~5.1",
+    "illuminate/console": "~5.1",
+    "illuminate/filesystem": "~5.1",
+    "guzzlehttp/guzzle": "~6.0",
+    "mustache/mustache": "~2.9"
+  },
+  "require-dev": {
+    "phpspec/phpspec": "master-dev",
+    "codeception/codeception": "master-dev",
+    "laravel/elixir": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mosaiqo\\Packet\\": "package/Mosaiqo/Packet/src/"
+    }
+
+  },
+  "minimum-stability": "stable"
 }
