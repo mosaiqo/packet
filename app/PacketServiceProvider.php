@@ -2,6 +2,7 @@
 
 use Illuminate\Support\ServiceProvider;
 use Mosaiqo\Packet\Console\Commands\NewPackageCommand;
+use Mosaiqo\Packet\Console\Commands\ClonePackageCommand;
 /**
  * This is the service provider.
  *
@@ -28,6 +29,7 @@ class PacketServiceProvider extends ServiceProvider
      */
     protected $commands = [
         NewPackageCommand::class,
+        ClonePackageCommand::class,
     ];
 
     /**

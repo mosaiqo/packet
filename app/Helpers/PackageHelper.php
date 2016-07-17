@@ -150,4 +150,12 @@ class PackageHelper
         @unlink($zipFile);
         return $this;
     }
+
+
+    public function ping($url)
+    {
+        $client = new Client();
+        $response = $client->get($url);
+        return $response->getStatusCode() == 200 ? true : false;
+    }
 }

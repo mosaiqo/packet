@@ -15,8 +15,6 @@ class NewPackageCommand extends Command
 
     protected $package;
     
-    protected $packageDescription;
-
     protected $fullPath;
 
     protected $path;
@@ -40,11 +38,10 @@ class NewPackageCommand extends Command
      */
     protected $description = 'Create a new package';
 
-    public function __construct (PackageHelper $helper, TemplateHelper $template)
+    public function __construct (PackageHelper $helper)
     {
         parent::__construct();
         $this->helper = $helper;
-        $this->template = $template;
     }
     /**
      * Execute the console command.
